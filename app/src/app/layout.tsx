@@ -13,13 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 //@todo rendre dynamique de la bdd
-const nom = 'JACQUIR'
-const prenom = 'Hatim'
-const metier = 'Développeur full-stack'
+const title = 'Hatim JACQUIR - Développeur full-stack'
 const description = 'Présentation de mon CV développé NextJS'
 
 export const metadata: Metadata = {
-  title: `PortFolio - ${nom} ${prenom} - ${metier}`,
+  title: `${title}`,
   description: `${description}`,
 };
 

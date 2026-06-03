@@ -5,6 +5,7 @@ app/node_modules
 # next.js
 app/.next/
 app/out/
+app/dev.db
 
 # production
 app/build
@@ -24,3 +25,6 @@ app/.vercel
 app/*.tsbuildinfo
 app/next-env.d.ts
 .idea
+# Keep environment variables out of version control
+app/.env
+app/src/generated/prisma
