@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      // todo c'est ici qu'on définit l'import avec les alias de chemin
+      "@/*": ["./*"]
     }
   },
   "include": [

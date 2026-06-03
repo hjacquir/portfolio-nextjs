@@ -26,5 +26,5 @@ app/*.tsbuildinfo
 app/next-env.d.ts
 .idea
 # Keep environment variables out of version control
-app/.env
+app/.env.local
 app/src/generated/prisma

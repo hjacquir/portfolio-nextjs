@@ -12,9 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-//@todo rendre dynamique de la bdd
-const title = 'Hatim JACQUIR - Développeur full-stack'
-const description = 'Présentation de mon CV développé NextJS'
+const title= process.env.NEXT_PUBLIC_SITE_TITLE
+const description= process.env.NEXT_PUBLIC_SITE_META_DESCRIPTION
 
 export const metadata: Metadata = {
   title: `${title}`,

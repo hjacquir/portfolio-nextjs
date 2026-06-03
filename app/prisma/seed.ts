@@ -1,11 +1,6 @@
-import  {prisma} from './../lib/prisma'
+import {postSite} from '@/lib/repositories/site.repository'
+
 export async function main() {
-    await prisma.site.create({
-        data: {
-            title: "Titre par défaut",
-            description: "Description par défaut",
-        },
-    });
 }
 
-main();
+main()
