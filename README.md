@@ -9,6 +9,7 @@ Projet de gestion d'un portfolio en nextJS
 * faire ``npm run dev``
 ### Prisma
 * Seeder ( = rajouter les données de fixtures) la bdd : ``npx prisma db seed``
-* Reset la bdd : ``npx prisma migrate reset --force && npx prisma db push && npx prisma db seed``
+* Regénérer le client Prisma : ``npx prisma generate``
+* Reset la bdd, migration et injection fixtures : ``npx prisma migrate reset --force && npx prisma db push && npx prisma db seed``
 ## Pratique
 * interface sur ``http://localhost:3000/``

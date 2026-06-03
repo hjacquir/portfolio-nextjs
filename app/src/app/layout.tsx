@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title= process.env.NEXT_PUBLIC_SITE_TITLE
-const description= process.env.NEXT_PUBLIC_SITE_META_DESCRIPTION
+const title= process.env.SITE_TITLE
+const description= process.env.SITE_META_DESCRIPTION
 
 export const metadata: Metadata = {
   title: `${title}`,
