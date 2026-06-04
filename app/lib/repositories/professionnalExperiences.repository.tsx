@@ -15,3 +15,13 @@ export async function postProfessionalExperiences(
         }
     })
 }
+
+export async function listProfessionalExperiences(): void {
+    return await prisma.ProfessionalExperiences.findMany(
+        {
+            orderBy: {
+                dateStart: "desc",
+            }
+        }
+    )
+}
