@@ -11,3 +11,13 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
+
+model ProfessionalExperiences {
+  id        Int       @id @default(autoincrement())
+  dateStart DateTime  @map("date_start")
+  dateEnd   DateTime? @map("date_end")
+  title     String
+  content   String
+
+  @@map("professional_experiences")
+}
