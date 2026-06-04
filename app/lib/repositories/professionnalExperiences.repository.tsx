@@ -1,5 +1,5 @@
 import {prisma} from '@/lib/prisma'
-
+// todo renommer
 export async function postProfessionalExperiences(
     dateStart: Date,
     title: string,
@@ -16,6 +16,7 @@ export async function postProfessionalExperiences(
     })
 }
 
+// todo renommer
 export async function listProfessionalExperiences(): void {
     return await prisma.ProfessionalExperiences.findMany(
         {
