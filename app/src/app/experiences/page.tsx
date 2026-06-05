@@ -1,5 +1,6 @@
 import {listExperiences} from '@/lib/repositories/Experiences.repository'
 import {ExperiencesCard} from '@/src/components/formatter/ExperiencesCard'
+import {ExperiencesType} from '@/src/types/Experiences.type'
 
 export default async function list() {
     const experiences = await listExperiences()
@@ -22,7 +23,7 @@ export default async function list() {
                     ) : (
                         <div className="timeline">
                             {
-                                experiences.map((pe) => (
+                                experiences.map((pe: ExperiencesType) => (
                                     <ExperiencesCard key={pe.id} experience={pe}/>
                                 ))
                             }

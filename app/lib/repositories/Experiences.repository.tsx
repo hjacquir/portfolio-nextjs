@@ -5,8 +5,8 @@ export async function postExperiences(
     title: string,
     content: string,
     dateEnd?: Date,
-): void {
-    await prisma.Experiences.create({
+): Promise<void> {
+    await prisma.experiences.create({
         data : {
             dateStart: dateStart,
             dateEnd: dateEnd,
@@ -16,8 +16,8 @@ export async function postExperiences(
     })
 }
 
-export async function listExperiences(): void {
-    return await prisma.Experiences.findMany(
+export async function listExperiences(): Promise<any> {
+    return await prisma.experiences.findMany(
         {
             orderBy: {
                 dateStart: "desc",

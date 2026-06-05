@@ -11,8 +11,7 @@ export async function main() {
     await postExperiences(
         new Date('2026-03-01'),
         'Titre par défaut 2',
-        'Contenu par défaut 2',
-        null
+        'Contenu par défaut 2'
     )
 }
 
