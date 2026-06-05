@@ -1,6 +1,16 @@
+import type {Metadata} from 'next'
 import {listExperiences} from '@/lib/repositories/Experiences.repository'
 import {ExperiencesCard} from '@/src/components/formatter/ExperiencesCard'
 import {ExperiencesType} from '@/src/types/Experiences.type'
+// optimisation SEO : ajout des balises meta
+export const metadata: Metadata = {
+    title: 'Expériences',
+    description: 'Liste de mes expériences professionnelles',
+    openGraph: {
+        title: 'Expériences',
+        description: 'Liste de mes expériences professionnelles'
+    }
+}
 
 export default async function list() {
     const experiences = await listExperiences()

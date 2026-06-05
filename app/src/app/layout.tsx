@@ -3,10 +3,12 @@ import "./globals.css";
 
 const title= process.env.SITE_TITLE
 const description= process.env.SITE_META_DESCRIPTION
-
+// optimisation SEO : ajout metadate avec héritage
 export const metadata: Metadata = {
-  title: `${title}`,
-  description: `${description}`,
+  title: {
+      template: `%s | ${title}`,
+      default: `${title}`
+  },
 };
 
 export default function RootLayout({
