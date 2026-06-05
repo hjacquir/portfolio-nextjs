@@ -1,7 +1,7 @@
-import {ProfessionalExperiencesType} from '@/src/types/ProfessionalExperiences.type'
+import {ExperiencesType} from '@/src/types/Experiences.type'
 import {PeriodFormatter} from '@/src/components/formatter/PeriodFormatter'
-// todo renommer
-export function ProfessionalExperiencesCard({experience}: { experience: ProfessionalExperiencesType }) {
+
+export function ExperiencesCard({experience}: { experience: ExperiencesType }) {
     return (
         <article className="experience-item">
             <div className="experience-header">

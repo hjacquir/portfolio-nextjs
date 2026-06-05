@@ -1,5 +1,4 @@
-// todo renommer
-export type ProfessionalExperiencesType = {
+export type ExperiencesType = {
     id: string;
     dateStart: Date
     dateEnd?: Date

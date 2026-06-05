@@ -1,5 +1,3 @@
-import {ProfessionalExperiencesCard} from "@/src/components/formatter/ProfessionalExperiencesCard";
-
 export default function Home() {
   return (
       <>

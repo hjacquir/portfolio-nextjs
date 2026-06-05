@@ -1,12 +1,12 @@
 import {prisma} from '@/lib/prisma'
-// todo renommer
-export async function postProfessionalExperiences(
+
+export async function postExperiences(
     dateStart: Date,
     title: string,
     content: string,
     dateEnd?: Date,
 ): void {
-    await prisma.ProfessionalExperiences.create({
+    await prisma.Experiences.create({
         data : {
             dateStart: dateStart,
             dateEnd: dateEnd,
@@ -16,9 +16,8 @@ export async function postProfessionalExperiences(
     })
 }
 
-// todo renommer
-export async function listProfessionalExperiences(): void {
-    return await prisma.ProfessionalExperiences.findMany(
+export async function listExperiences(): void {
+    return await prisma.Experiences.findMany(
         {
             orderBy: {
                 dateStart: "desc",

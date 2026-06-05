@@ -13,3 +13,7 @@ Projet de gestion d'un portfolio en nextJS
 * Reset la bdd, migration et injection fixtures : ``npx prisma migrate reset --force && npx prisma db push && npx prisma db seed``
 ## Pratique
 * interface sur ``http://localhost:3000/``
+## TODO
+* optimisations SEO :balise, meta, sitemap, robots etc ...
+* encapsulation composant Navigation, remontée dans le parent (layout), rendu dynamique et contextuel
+* introduction du singleton pour le client Prisma

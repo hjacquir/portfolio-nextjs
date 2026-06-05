@@ -1,9 +1,8 @@
-import {listProfessionalExperiences} from '@/lib/repositories/professionnalExperiences.repository'
-import {ProfessionalExperiencesCard} from '@/src/components/formatter/ProfessionalExperiencesCard'
+import {listExperiences} from '@/lib/repositories/Experiences.repository'
+import {ExperiencesCard} from '@/src/components/formatter/ExperiencesCard'
 
 export default async function list() {
-    // todo renommer
-    const professionalExperiences = await listProfessionalExperiences()
+    const experiences = await listExperiences()
 
     return (
         <>
@@ -16,15 +15,15 @@ export default async function list() {
             </header>
             <main className="experiences-main">
                 {
-                    professionalExperiences.lenth === 0 ? (
+                    experiences.lenth === 0 ? (
                         <p style={{color: "var(--text-muted)", fontSize: "13px"}}>
                             Aucune expérience enregistrée.
                         </p>
                     ) : (
                         <div className="timeline">
                             {
-                                professionalExperiences.map((pe) => (
-                                    <ProfessionalExperiencesCard key={pe.id} experience={pe}/>
+                                experiences.map((pe) => (
+                                    <ExperiencesCard key={pe.id} experience={pe}/>
                                 ))
                             }
                         </div>
