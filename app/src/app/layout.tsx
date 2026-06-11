@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Navigation} from '@/src/components/Navigation'
 import "./globals.css";
+import data from '@/src/data/urls.json'
 
 const title= process.env.SITE_TITLE
 const description= process.env.SITE_META_DESCRIPTION
@@ -11,17 +12,6 @@ export const metadata: Metadata = {
       default: `${title}`
   },
 };
-
-const navigationLinks = [
-    {
-        href: '/',
-        label: 'Accueil',
-    },
-    {
-        href: '/experiences',
-        label: 'Expériences',
-    }
-]
 
 export default function RootLayout({
                                      children,
@@ -39,8 +29,8 @@ export default function RootLayout({
               </div>
               <nav className="navigation">
                   {
-                      navigationLinks.map((item) => (
-                          <Navigation href={item.href} key={item.href}>
+                      data.map((item) => (
+                          <Navigation href={item.url} key={item.url}>
                               {item.label}
                           </Navigation>
                       ))

@@ -1,0 +1,16 @@
+[
+  {
+    "url": "/",
+    "label": "Accueil",
+    "lastModified": "2026-06-11",
+    "changeFrequency": "daily",
+    "priority": 1
+  },
+  {
+    "url": "/experiences",
+    "label": "Expériences",
+    "lastModified": "2026-06-11",
+    "changeFrequency": "daily",
+    "priority": 1
+  }
+]
