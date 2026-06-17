@@ -4,7 +4,7 @@ export async function postExperiences(
     dateStart: Date,
     title: string,
     content: string,
-    dateEnd?: Date,
+    dateEnd: Date|null,
 ): Promise<void> {
     await prisma.experiences.create({
         data : {

@@ -15,6 +15,10 @@ Projet de gestion d'un portfolio en nextJS
 * interface sur ``http://localhost:3000/``
 * analyse statique des erreurs typescript via le linter : ``npx tsc --noEmit``
 ## TODO
-* optimisations SEO :balise, meta, sitemap, robots etc ...
-* encapsulation composant Navigation, remontée dans le parent (layout), rendu dynamique et contextuel
+* optimisations SEO :balise, meta, sitemap, robots etc ... -> done
+* encapsulation composant Navigation, remontée dans le parent (layout), rendu dynamique et contextuel -> done
 * introduction du singleton pour le client Prisma
+* ajouter la validation via zod lors de la création et l'affichage des messages d'erreur
+* déplacer le formulaire de création sur une autre page
+* ajouter un back-office avec une authentification pour accéder au formulaire de création
+* améliorer le rendu visuel du formulaire

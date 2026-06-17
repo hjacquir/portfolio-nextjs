@@ -2,6 +2,7 @@ import type {Metadata} from 'next'
 import {listExperiences} from '@/lib/repositories/Experiences.repository'
 import {ExperiencesCard} from '@/src/components/formatter/ExperiencesCard'
 import {ExperiencesType} from '@/src/types/Experiences.type'
+import {ExperiencesForm} from "@/src/app/experiences/ExperiencesForm";
 // optimisation SEO : ajout des balises meta
 export const metadata: Metadata = {
     title: 'Expériences',
@@ -18,6 +19,7 @@ export default async function list() {
     return (
         <>
             <main className="experiences-main">
+                <ExperiencesForm/>
                 {
                     experiences.lenth === 0 ? (
                         <p style={{color: "var(--text-muted)", fontSize: "13px"}}>
