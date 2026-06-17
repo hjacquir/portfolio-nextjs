@@ -3,9 +3,8 @@
 import {useActionState, useState} from "react";
 import {createExperiences} from '@/src/app/experiences/actions'
 
-const initialState = {succes: false, error: {}}
-
 export function ExperiencesForm() {
+    const initialState = {success: false, error: {}}
     const [responseAfterForSubmission, formAction, isPendingAfterFormSubmission] = useActionState(createExperiences, initialState)
 
     return (

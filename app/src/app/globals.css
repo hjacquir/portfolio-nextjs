@@ -33,7 +33,6 @@ body {
 /* ─── LAYOUT ─────────────────────────────────────────── */
 
 .experiences-layout {
-  display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   max-width: 900px;
@@ -101,7 +100,6 @@ body {
   text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 3rem;
-  display: flex;
   align-items: center;
   gap: 1rem;
 }
@@ -176,7 +174,6 @@ body {
 }
 
 .experience-header {
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
@@ -212,36 +209,6 @@ body {
   line-height: 1.7;
   margin-bottom: 1.25rem;
   font-weight: 300;
-}
-
-/* ─── FOOTER ──────────────────────────────────────────── */
-
-.experiences-footer {
-  padding: 2rem 0;
-  border-top: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-link {
-  font-size: 11px;
-  color: var(--text-muted);
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: color 0.2s;
-}
-
-.footer-link:hover {
-  color: var(--text-primary);
 }
 
 /* ─── NAVIGATIONS ──────────────────────────────────────── */
