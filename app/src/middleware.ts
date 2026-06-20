@@ -1,8 +1,6 @@
 import {NextResponse} from "next/server";
 import {auth} from "@/auth";
 
-// export { auth as middleware } from "@/src/auth"
-
 export default auth(
     (req) => {
         console.log("Middleware exécuté sur :", req.nextUrl.pathname);
