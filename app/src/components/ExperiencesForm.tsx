@@ -1,11 +1,11 @@
 "use client"
 
 import {useActionState, useState} from "react";
-import {createExperiences} from '@/src/app/experiences/actions'
+import {createExperiences} from '@/app/experiences/actions'
 
 export function ExperiencesForm() {
     const initialState = {success: false, error: {}}
-    const [responseAfterForSubmission, formAction, isPendingAfterFormSubmission] = useActionState(createExperiences, initialState)
+    const [responseAfterFormSubmission, formAction, isPendingAfterFormSubmission] = useActionState(createExperiences, initialState)
 
     return (
         <>

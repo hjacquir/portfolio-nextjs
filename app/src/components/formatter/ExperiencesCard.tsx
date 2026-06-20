@@ -1,5 +1,5 @@
-import {ExperiencesType} from '@/src/types/Experiences.type'
-import {PeriodFormatter} from '@/src/components/formatter/PeriodFormatter'
+import {ExperiencesType} from '@/types/Experiences.type'
+import {PeriodFormatter} from '@/components/formatter/PeriodFormatter'
 
 export function ExperiencesCard({experience}: { experience: ExperiencesType }) {
     return (

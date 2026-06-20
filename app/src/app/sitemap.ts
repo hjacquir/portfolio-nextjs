@@ -1,5 +1,5 @@
 import {MetadataRoute} from 'next'
-import data from '@/src/data/urls.json'
+import data from '@/data/urls.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = process.env.PUBLIC_BASE_URL

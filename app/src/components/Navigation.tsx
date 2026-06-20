@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
-import {NavigationLinkType} from '@/src/types/NavigationLink.type'
+import {NavigationLinkType} from '@/types/NavigationLink.type'
 
 export function Navigation({href, children}: NavigationLinkType) {
     const pathname = usePathname()

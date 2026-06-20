@@ -2,7 +2,7 @@
 
 import {postExperiences} from '@/lib/repositories/Experiences.repository'
 import {revalidatePath} from "next/cache";
-import {ExperiencesState} from '@/src/types/ExperiencesState'
+import {ExperiencesState} from '@/types/ExperiencesState'
 
 export async function createExperiences(previousState: ExperiencesState, formData: FormData) {
     try {
