@@ -4,7 +4,7 @@ import {useActionState, useState} from "react";
 import {createExperiences} from '@/app/admin/experiences/actions'
 
 export function ExperiencesForm() {
-    const initialState = {success: false, error: {}}
+    const initialState = {success: false, errors: {}}
     const [responseAfterFormSubmission, formAction, isPendingAfterFormSubmission] = useActionState(createExperiences, initialState)
 
     return (
