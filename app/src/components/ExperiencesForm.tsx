@@ -1,7 +1,7 @@
 "use client"
 
 import {useActionState, useState} from "react";
-import {createExperiences} from '@/app/experiences/actions'
+import {createExperiences} from '@/app/admin/experiences/actions'
 
 export function ExperiencesForm() {
     const initialState = {success: false, error: {}}

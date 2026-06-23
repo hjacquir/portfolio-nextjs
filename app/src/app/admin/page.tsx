@@ -1,9 +1,9 @@
-import Link from "next/link";
-
-export default function AdminPage() {
+export default function AdminHome() {
     return (
         <>
-            <Link href="/admin/experiences/add">Ajouter une nouvelle expérience</Link>
+            <main className="experiences-main">
+                Bienvenue dans l'espace d'administration
+            </main>
         </>
     )
 }
