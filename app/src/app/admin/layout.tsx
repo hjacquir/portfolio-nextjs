@@ -1,11 +1,17 @@
 import {Navigation} from '@/components/Navigation'
 import "../globals.css";
+import {auth} from "@/auth";
+import {redirect} from "next/navigation";
 
 export default function AdminLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const session = auth()
+
+    if (!session) redirect("/login");
+
     return (
         <div className="experiences-layout">
             <header className="experiences-header">
